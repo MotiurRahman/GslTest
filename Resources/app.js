@@ -26,7 +26,13 @@ var label1 = Titanium.UI.createLabel({
 	width:'auto'
 });
 
+label1.addEventListener('click',function(e)
+{
+	alert(Ti.App.Properties.getString('ti.ui.defaultunit'));
+});
+
 win1.add(label1);
+
 
 //
 // create controls tab and root window

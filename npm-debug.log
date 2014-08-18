@@ -1,0 +1,299 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'alloy' ]
+2 info using npm@1.4.21
+3 info using node@v0.10.30
+4 verbose cache add [ 'alloy', null ]
+5 verbose cache add name=undefined spec="alloy" args=["alloy",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'alloy',
+6 verbose parsed url   path: 'alloy',
+6 verbose parsed url   href: 'alloy' }
+7 silly lockFile 8d809cba-alloy alloy
+8 verbose lock alloy /Users/gsl001/.npm/8d809cba-alloy.lock
+9 silly lockFile 8d809cba-alloy alloy
+10 silly lockFile 8d809cba-alloy alloy
+11 verbose addNamed [ 'alloy', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile b2f8915b-alloy alloy@
+14 verbose lock alloy@ /Users/gsl001/.npm/b2f8915b-alloy.lock
+15 silly addNameRange { name: 'alloy', range: '*', hasData: false }
+16 verbose request where is /alloy
+17 verbose request registry https://registry.npmjs.org/
+18 verbose request id 82453affaccf3b9c
+19 verbose url raw /alloy
+20 verbose url resolving [ 'https://registry.npmjs.org/', './alloy' ]
+21 verbose url resolved https://registry.npmjs.org/alloy
+22 verbose request where is https://registry.npmjs.org/alloy
+23 info trying registry request attempt 1 at 14:21:59
+24 http GET https://registry.npmjs.org/alloy
+25 http 200 https://registry.npmjs.org/alloy
+26 silly registry.get cb [ 200,
+26 silly registry.get   { date: 'Mon, 18 Aug 2014 08:22:01 GMT',
+26 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+26 silly registry.get     etag: '"LPQ34S0E4RIYD2M6GFIPH1MD"',
+26 silly registry.get     'content-type': 'application/json',
+26 silly registry.get     'cache-control': 'max-age=60',
+26 silly registry.get     'content-length': '208738',
+26 silly registry.get     'accept-ranges': 'bytes',
+26 silly registry.get     via: '1.1 varnish',
+26 silly registry.get     age: '2406',
+26 silly registry.get     'x-served-by': 'cache-fra1227-FRA',
+26 silly registry.get     'x-cache': 'HIT',
+26 silly registry.get     'x-cache-hits': '1',
+26 silly registry.get     'x-timer': 'S1408350121.341083,VS0,VE1',
+26 silly registry.get     vary: 'Accept',
+26 silly registry.get     'keep-alive': 'timeout=10, max=50',
+26 silly registry.get     connection: 'Keep-Alive' } ]
+27 silly addNameRange number 2 { name: 'alloy', range: '*', hasData: true }
+28 silly addNameRange versions [ 'alloy',
+28 silly addNameRange   [ '0.1.0',
+28 silly addNameRange     '0.1.1',
+28 silly addNameRange     '0.1.2',
+28 silly addNameRange     '0.1.3',
+28 silly addNameRange     '0.1.4',
+28 silly addNameRange     '0.1.5',
+28 silly addNameRange     '0.1.6',
+28 silly addNameRange     '0.1.7',
+28 silly addNameRange     '0.1.8',
+28 silly addNameRange     '0.1.10',
+28 silly addNameRange     '0.1.11',
+28 silly addNameRange     '0.1.12',
+28 silly addNameRange     '0.1.13',
+28 silly addNameRange     '0.1.14',
+28 silly addNameRange     '0.1.15',
+28 silly addNameRange     '0.1.16',
+28 silly addNameRange     '0.1.17',
+28 silly addNameRange     '0.1.19',
+28 silly addNameRange     '0.1.20',
+28 silly addNameRange     '0.1.21',
+28 silly addNameRange     '0.1.22',
+28 silly addNameRange     '0.1.23',
+28 silly addNameRange     '0.1.24',
+28 silly addNameRange     '0.1.25',
+28 silly addNameRange     '0.1.26',
+28 silly addNameRange     '0.1.27',
+28 silly addNameRange     '0.1.28',
+28 silly addNameRange     '0.1.29',
+28 silly addNameRange     '0.2.0',
+28 silly addNameRange     '0.2.2',
+28 silly addNameRange     '0.2.3',
+28 silly addNameRange     '0.2.4',
+28 silly addNameRange     '0.2.5',
+28 silly addNameRange     '0.2.6',
+28 silly addNameRange     '0.2.7',
+28 silly addNameRange     '0.2.8',
+28 silly addNameRange     '0.2.9',
+28 silly addNameRange     '0.2.10',
+28 silly addNameRange     '0.2.11',
+28 silly addNameRange     '0.2.12',
+28 silly addNameRange     '0.2.13',
+28 silly addNameRange     '0.2.14',
+28 silly addNameRange     '0.2.15',
+28 silly addNameRange     '0.2.16',
+28 silly addNameRange     '0.2.17',
+28 silly addNameRange     '0.2.18',
+28 silly addNameRange     '0.2.19',
+28 silly addNameRange     '0.2.20',
+28 silly addNameRange     '0.2.21',
+28 silly addNameRange     '0.2.22',
+28 silly addNameRange     '0.2.23',
+28 silly addNameRange     '0.2.24',
+28 silly addNameRange     '0.2.25',
+28 silly addNameRange     '0.2.26',
+28 silly addNameRange     '0.2.27',
+28 silly addNameRange     '0.2.28',
+28 silly addNameRange     '0.2.29',
+28 silly addNameRange     '0.2.30',
+28 silly addNameRange     '0.2.31',
+28 silly addNameRange     '0.2.32',
+28 silly addNameRange     '0.2.33',
+28 silly addNameRange     '0.2.34',
+28 silly addNameRange     '0.2.35',
+28 silly addNameRange     '0.2.35-1',
+28 silly addNameRange     '0.2.35-2',
+28 silly addNameRange     '0.2.36',
+28 silly addNameRange     '0.2.37',
+28 silly addNameRange     '0.2.37-1',
+28 silly addNameRange     '0.2.38',
+28 silly addNameRange     '0.2.39',
+28 silly addNameRange     '0.2.39-1',
+28 silly addNameRange     '0.2.40',
+28 silly addNameRange     '0.2.41',
+28 silly addNameRange     '0.2.42',
+28 silly addNameRange     '0.3.0',
+28 silly addNameRange     '0.3.1',
+28 silly addNameRange     '0.3.2',
+28 silly addNameRange     '0.3.3',
+28 silly addNameRange     '0.3.4',
+28 silly addNameRange     '0.3.5',
+28 silly addNameRange     '0.3.6',
+28 silly addNameRange     '1.0.0-cr',
+28 silly addNameRange     '1.0.0',
+28 silly addNameRange     '1.1.0-alpha',
+28 silly addNameRange     '1.1.0-beta',
+28 silly addNameRange     '1.1.0-cr',
+28 silly addNameRange     '1.1.0',
+28 silly addNameRange     '1.1.1-alpha',
+28 silly addNameRange     '1.1.1-cr',
+28 silly addNameRange     '1.1.1',
+28 silly addNameRange     '1.1.2-alpha',
+28 silly addNameRange     '1.1.2',
+28 silly addNameRange     '1.1.3-alpha',
+28 silly addNameRange     '1.1.3-cr',
+28 silly addNameRange     '1.1.3',
+28 silly addNameRange     '1.2.0-alpha',
+28 silly addNameRange     '1.2.0-alpha2',
+28 silly addNameRange     '1.2.0-alpha3',
+28 silly addNameRange     '1.2.0-alpha4',
+28 silly addNameRange     '1.2.0-alpha5',
+28 silly addNameRange     '1.2.0-alpha6',
+28 silly addNameRange     '1.2.0-beta',
+28 silly addNameRange     '1.2.1-cr',
+28 silly addNameRange     '1.2.0',
+28 silly addNameRange     '1.2.1-cr2',
+28 silly addNameRange     '1.2.1',
+28 silly addNameRange     '1.2.2-beta',
+28 silly addNameRange     '1.2.2-cr',
+28 silly addNameRange     '1.2.2',
+28 silly addNameRange     '1.3.0-alpha',
+28 silly addNameRange     '1.3.0-alpha6',
+28 silly addNameRange     '1.3.0-alpha7',
+28 silly addNameRange     '1.3.0-beta',
+28 silly addNameRange     '1.3.0-cr',
+28 silly addNameRange     '1.3.0-cr2',
+28 silly addNameRange     '1.3.0',
+28 silly addNameRange     '1.3.1-alpha',
+28 silly addNameRange     '1.3.1-beta',
+28 silly addNameRange     '1.3.1-beta2',
+28 silly addNameRange     '1.3.1-beta3',
+28 silly addNameRange     '1.3.1-beta4',
+28 silly addNameRange     '1.3.1-cr',
+28 silly addNameRange     '1.3.1-cr2',
+28 silly addNameRange     '1.3.1-cr3',
+28 silly addNameRange     '1.3.1',
+28 silly addNameRange     '1.4.0-alpha',
+28 silly addNameRange     '1.4.0-alpha2',
+28 silly addNameRange     '1.4.0-alpha3',
+28 silly addNameRange     '1.4.0-alpha4',
+28 silly addNameRange     '1.4.0-beta',
+28 silly addNameRange     '1.4.0-beta2',
+28 silly addNameRange     '1.4.0-rc',
+28 silly addNameRange     '1.4.0-rc2',
+28 silly addNameRange     '1.4.0-rc3',
+28 silly addNameRange     '1.4.0-rc4',
+28 silly addNameRange     '1.4.0-rc5',
+28 silly addNameRange     '1.4.0',
+28 silly addNameRange     '1.4.1-rc',
+28 silly addNameRange     '1.4.1' ] ]
+29 verbose addNamed [ 'alloy', '1.4.1' ]
+30 verbose addNamed [ '1.4.1', '1.4.1' ]
+31 silly lockFile 842d642f-alloy-1-4-1 alloy@1.4.1
+32 verbose lock alloy@1.4.1 /Users/gsl001/.npm/842d642f-alloy-1-4-1.lock
+33 silly lockFile 12255fb4--npmjs-org-alloy-alloy-1-4-1-tgz https://registry.npmjs.org/alloy/-/alloy-1.4.1.tgz
+34 verbose lock https://registry.npmjs.org/alloy/-/alloy-1.4.1.tgz /Users/gsl001/.npm/12255fb4--npmjs-org-alloy-alloy-1-4-1-tgz.lock
+35 verbose addRemoteTarball [ 'https://registry.npmjs.org/alloy/-/alloy-1.4.1.tgz',
+35 verbose addRemoteTarball   '6d93e7ac0f20e25f1a75dad913e4693589e9f4c6' ]
+36 info retry fetch attempt 1 at 14:22:03
+37 verbose fetch to= /var/folders/7h/1n57gz6s61512w_44d1sgh840000gn/T/npm-27496-GIl5v9Nc/registry.npmjs.org/alloy/-/alloy-1.4.1.tgz
+38 http GET https://registry.npmjs.org/alloy/-/alloy-1.4.1.tgz
+39 http 200 https://registry.npmjs.org/alloy/-/alloy-1.4.1.tgz
+40 silly lockFile 12255fb4--npmjs-org-alloy-alloy-1-4-1-tgz https://registry.npmjs.org/alloy/-/alloy-1.4.1.tgz
+41 silly lockFile 12255fb4--npmjs-org-alloy-alloy-1-4-1-tgz https://registry.npmjs.org/alloy/-/alloy-1.4.1.tgz
+42 silly lockFile 842d642f-alloy-1-4-1 alloy@1.4.1
+43 silly lockFile 842d642f-alloy-1-4-1 alloy@1.4.1
+44 silly lockFile b2f8915b-alloy alloy@
+45 silly lockFile b2f8915b-alloy alloy@
+46 silly resolved [ { name: 'alloy',
+46 silly resolved     description: 'Appcelerator Titanium MVC Framework',
+46 silly resolved     keywords:
+46 silly resolved      [ 'appcelerator',
+46 silly resolved        'titanium',
+46 silly resolved        'alloy',
+46 silly resolved        'mobile',
+46 silly resolved        'ios',
+46 silly resolved        'iphone',
+46 silly resolved        'android',
+46 silly resolved        'blackberry',
+46 silly resolved        'html5',
+46 silly resolved        'mobileweb' ],
+46 silly resolved     version: '1.4.1',
+46 silly resolved     author: { name: 'Appcelerator, Inc.', email: 'info@appcelerator.com' },
+46 silly resolved     maintainers: [ [Object], [Object], [Object], [Object], [Object] ],
+46 silly resolved     repository: { type: 'git', url: 'http://github.com/appcelerator/alloy.git' },
+46 silly resolved     preferGlobal: true,
+46 silly resolved     dependencies:
+46 silly resolved      { colors: '0.6.0-1',
+46 silly resolved        pkginfo: '0.2.2',
+46 silly resolved        commander: '0.6.1',
+46 silly resolved        wrench: '1.3.9',
+46 silly resolved        xmldom: '0.1.19',
+46 silly resolved        jsonlint: '1.5.1',
+46 silly resolved        'uglify-js': '2.2.5',
+46 silly resolved        'source-map': '0.1.9',
+46 silly resolved        xml2tss: '0.0.5',
+46 silly resolved        moment: '>=2.4.0',
+46 silly resolved        'node.extend': '1.0.10' },
+46 silly resolved     license: 'Apache Public License v2',
+46 silly resolved     bin: { alloy: './bin/alloy' },
+46 silly resolved     scripts: { test: 'jake test:all' },
+46 silly resolved     main: './Alloy/alloy',
+46 silly resolved     engines: { node: '>=0.8' },
+46 silly resolved     bugs: { url: 'https://github.com/appcelerator/alloy/issues' },
+46 silly resolved     homepage: 'https://github.com/appcelerator/alloy',
+46 silly resolved     _id: 'alloy@1.4.1',
+46 silly resolved     dist:
+46 silly resolved      { shasum: '6d93e7ac0f20e25f1a75dad913e4693589e9f4c6',
+46 silly resolved        tarball: 'http://registry.npmjs.org/alloy/-/alloy-1.4.1.tgz' },
+46 silly resolved     _from: 'alloy@',
+46 silly resolved     _npmVersion: '1.4.3',
+46 silly resolved     _npmUser: { name: 'pinnamur', email: 'pinnamuri@appcelerator.com' },
+46 silly resolved     directories: {},
+46 silly resolved     _shasum: '6d93e7ac0f20e25f1a75dad913e4693589e9f4c6',
+46 silly resolved     _resolved: 'https://registry.npmjs.org/alloy/-/alloy-1.4.1.tgz' } ]
+47 info install alloy@1.4.1 into /usr/local/lib
+48 info installOne alloy@1.4.1
+49 verbose lib/node_modules/alloy unbuild
+50 info preuninstall alloy@1.4.1
+51 info uninstall alloy@1.4.1
+52 verbose true,/usr/local/lib/node_modules,/usr/local/lib/node_modules unbuild alloy@1.4.1
+53 verbose /usr/local/bin,[object Object] binRoot
+54 info postuninstall alloy@1.4.1
+55 verbose lib/node_modules/alloy unbuild
+56 info preuninstall alloy@1.4.1
+57 info uninstall alloy@1.4.1
+58 verbose true,/usr/local/lib/node_modules,/usr/local/lib/node_modules unbuild alloy@1.4.1
+59 verbose /usr/local/bin,[object Object] binRoot
+60 info postuninstall alloy@1.4.1
+61 error error rolling back Error: EACCES, unlink '/usr/local/lib/node_modules/alloy'
+61 error error rolling back  alloy@1.4.1 { [Error: EACCES, unlink '/usr/local/lib/node_modules/alloy']
+61 error error rolling back   errno: 3,
+61 error error rolling back   code: 'EACCES',
+61 error error rolling back   path: '/usr/local/lib/node_modules/alloy' }
+62 error Error: EACCES, unlink '/usr/local/lib/node_modules/alloy'
+62 error  { [Error: EACCES, unlink '/usr/local/lib/node_modules/alloy']
+62 error   errno: 3,
+62 error   code: 'EACCES',
+62 error   path: '/usr/local/lib/node_modules/alloy' }
+63 error Please try running this command again as root/Administrator.
+64 error System Darwin 13.3.0
+65 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "alloy"
+66 error cwd /Titanium/AppC_project/Gsltest
+67 error node -v v0.10.30
+68 error npm -v 1.4.21
+69 error path /usr/local/lib/node_modules/alloy
+70 error code EACCES
+71 error errno 3
+72 error stack Error: EACCES, unlink '/usr/local/lib/node_modules/alloy'
+73 verbose exit [ 3, true ]
