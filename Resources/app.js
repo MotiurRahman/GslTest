@@ -1,70 +1,98 @@
-// this sets the background color of the master UIView (when there are no windows/tab groups on it)
-Titanium.UI.setBackgroundColor('#000');
-
-// create tab group
-var tabGroup = Titanium.UI.createTabGroup();
-
-
-//
-// create base UI tab and root window
-//
-var win1 = Titanium.UI.createWindow({  
-    title:'Tab 1',
-    backgroundColor:'#fff'
-});
-var tab1 = Titanium.UI.createTab({  
-    icon:'KS_nav_views.png',
-    title:'Tab 1',
-    window:win1
+var win = Titanium.UI.createWindow({
+	title : 'Audio Test',
+	backgroundColor : '#000',
+	layout : 'vertical'
 });
 
-var label1 = Titanium.UI.createLabel({
-	color:'#999',
-	text:'I am Window 1',
-	font:{fontSize:20,fontFamily:'Helvetica Neue'},
-	textAlign:'center',
-	width:'auto'
+var startStopButton = Titanium.UI.createButton({
+	title : 'Start/Stop Streaming',
+	top : 10,
+	width : 200,
+	height : 40,
 });
 
-label1.addEventListener('click',function(e)
-{
-	alert(Ti.App.Properties.getString('ti.ui.defaultunit'));
+var pauseResumeButton = Titanium.UI.createButton({
+	title : 'Pause/Resume Streaming',
+	top : 10,
+	width : 200,
+	height : 40,
+	enabled : false
 });
 
-win1.add(label1);
+win.add(startStopButton);
+win.add(pauseResumeButton);
 
+var pb = Titanium.UI.createProgressBar({
+	top : 10,
+	width : 250,
+	height : 'auto',
+	min : 0,
+	max : 200,
+	value : 0,
+	color : '#fff',
+	message : 'Playing is going',
+	font : {
+		fontSize : 14,
+		fontWeight : 'bold'
+	},
 
-//
-// create controls tab and root window
-//
-var win2 = Titanium.UI.createWindow({  
-    title:'Tab 2',
-    backgroundColor:'#fff'
-});
-var tab2 = Titanium.UI.createTab({  
-    icon:'KS_nav_ui.png',
-    title:'Tab 2',
-    window:win2
-});
-
-var label2 = Titanium.UI.createLabel({
-	color:'#999',
-	text:'I am Window 2',
-	font:{fontSize:20,fontFamily:'Helvetica Neue'},
-	textAlign:'center',
-	width:'auto'
 });
 
-win2.add(label2);
+// allowBackground: true on Android allows the
+// player to keep playing when the app is in the
+// background.
 
+//Ti.Media.createSound({url:"sound.wav"});
+var audioPlayer = Ti.Media.createAudioPlayer({
+	url : 'http://www.music.com.bd/download/Music/A/Abdul%20Jabber/Abdul%20Jabber%20-%20Petch%20Dhala%20Ei%20(music.com.bd).mp3',
+	allowBackground : true
+});
 
+startStopButton.addEventListener('click', function() {
+	// When paused, playing returns false.
+	// If both are false, playback is stopped.
+	if (audioPlayer.playing || audioPlayer.paused) {
+		audioPlayer.stop();
+		pauseResumeButton.enabled = false;
+		if (Ti.Platform.name === 'android') {
+			audioPlayer.release();
+		}
+	} else {
 
-//
-//  add tabs
-//
-tabGroup.addTab(tab1);  
-tabGroup.addTab(tab2);  
+		audioPlayer.start();
+		pauseResumeButton.enabled = true;
+	}
+});
 
+pauseResumeButton.addEventListener('click', function() {
+	if (audioPlayer.paused) {
+		audioPlayer.start();
+	} else {
+		audioPlayer.pause();
+	}
+});
 
-// open tab group
-tabGroup.open();
+var progresValue;
+
+audioPlayer.addEventListener('progress', function(e) {
+	Ti.API.info(e.progress);
+	progresValue = e.progress;
+	pb.value = Math.round(e.progress / 1000);
+
+});
+
+win.add(pb);
+pb.show();
+
+audioPlayer.addEventListener('change', function(e) {
+	Ti.API.info('State: ' + e.description + ' (' + e.state + ')');
+});
+
+win.addEventListener('close', function() {
+	audioPlayer.stop();
+	if (Ti.Platform.osname === 'android') {
+		audioPlayer.release();
+	}
+});
+
+win.open();
